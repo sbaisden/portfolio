@@ -1094,7 +1094,6 @@ main nav {
       #home .project-highlights .portfolio a .item-one, #home .project-highlights .portfolio a .item-two, #home .project-highlights .portfolio a .item-three {
         height: 300px;
         width: 100%;
-        border: 1px solid white;
         margin: 0;
         transition: transform 0.3s; }
       #home .project-highlights .portfolio a:hover > .portfolio-items {
