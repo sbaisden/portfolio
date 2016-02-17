@@ -1344,6 +1344,8 @@ main nav {
   padding: 50px 0;
   position: relative;
   z-index: 2; }
+  #contact h3 {
+    color: white; }
   #contact p {
     margin-top: 0; }
   #contact a {
