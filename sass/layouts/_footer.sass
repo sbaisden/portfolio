@@ -1,0 +1,56 @@
+//-----------------------------------------------
+// Footer Styles
+//-----------------------------------------------
+
+footer
+	background-color: black
+	font-size: 16px
+	padding: 20px
+
+	nav
+		display: inline-block
+		margin-bottom: 20px
+		li
+			display: inline-block
+			margin-right: 30px
+			&:last-child
+				margin-right: 0px
+		a
+			text-decoration: none
+			color: white
+			transition: color 0.3s
+			-webkit-transition: color 0.3s
+			&:hover
+				color: $secondary-text-color
+
+	.social-icons
+		float: right
+
+		ul li
+			display: inline-block
+			margin-left: 10px
+			a
+				display: block
+			svg
+				margin: 10px
+				fill: white
+				transition: all 0.3s ease-in-out
+				&:hover
+					fill: $primary-background-color
+
+	.copyright
+		color: white
+		text-align: center
+		font-size: 14px
+
+
+@media only screen and (max-width: 767px)
+	footer
+		nav
+			text-align: center
+			display: block
+		.social-icons
+			display: block
+			text-align: center
+			margin-bottom: 10px
+			float: none

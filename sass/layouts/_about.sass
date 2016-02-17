@@ -1,0 +1,122 @@
+//-----------------------------------------------
+// About Styles
+//-----------------------------------------------
+
+#about
+	header
+		margin: 120px 0 50px 0
+		text-align: center
+		h1
+			small
+				display: block
+				font-size: 60%
+				margin-bottom: 10px
+		.intro
+			text-align: left
+			margin-bottom: 50px
+			padding: 0 20px
+
+	.my-skills
+		margin: 20px 0
+		.skills
+			height: 150px
+			text-indent: -9999px
+			margin: 0px
+		.html5-logo
+			@extend .skills
+			background: url('/img/logos/html5-badge-logo.png') center center no-repeat
+			background-size: 145px 64px
+		.jquery-logo
+			@extend .skills
+			background: url('/img/logos/jquery-logo.png') center center no-repeat
+			background-size: 262px 64px
+		.sass-logo
+			@extend .skills
+			background: url('/img/logos/sass-logo.png') center center no-repeat
+			background-size: 85px 64px
+
+	.places-worked
+		margin: 50px 0
+		position: relative
+
+		h2
+			text-align: center
+
+		.spine
+			height: 100%
+			width: 1px
+			background-color: $primary-background-color
+			margin: 0 auto
+			position: absolute
+			left: 50%
+		.branches
+			border-top: 1px solid $primary-background-color
+			position: relative
+			width: 50%
+			span
+				width: 20px
+				height: 20px
+				border-radius: 10px
+				border: 3px solid $primary-background-color
+				background-color: white
+				display: inline-block
+				position: absolute
+				top: -10px
+				right: -10px
+			&:nth-child(even)
+				float: left
+			&:nth-child(odd)
+				float: right
+				span
+					left: -10px
+			&:nth-child(2)
+				margin-top: 100px
+			&:nth-child(3)
+				margin-top: 300px
+			.content
+				margin: 40px
+			h3
+				margin: 0
+			.details
+				line-height: 1.2
+			.companies
+				margin: 0 0 40px 0
+				text-indent: -9999px
+			.wcrs-logo
+				@extend .companies
+				background: url('/img/logos/wcrs-logo.png') center center no-repeat
+				background-size: 124px 124px
+				height: 124px
+			.havas-logo
+				@extend .companies
+				background: url('/img/logos/havas-people-logo.png') center center no-repeat
+				background-size: 164px 70px
+				height: 70px
+			.mammoth-logo
+				@extend .companies
+				background: url('/img/logos/mammoth-logo.png') center center no-repeat
+				background-size: 129px 124px
+				height: 124px
+
+
+@media only screen and (max-width: 767px)
+	#about
+		.places-worked
+			.spine
+				left: 20px
+			.branches
+				margin-left: 30px
+				margin-right: 30px
+				width: auto
+				span
+					left: -20px
+				.content
+					margin: 40px 20px
+				&:nth-child(even)
+					float: none
+				&:nth-child(odd)
+					float: none
+					span
+						left: -20px
+				&:nth-child(3)
+					margin-top: 0

@@ -1,0 +1,104 @@
+//-----------------------------------------------
+// Naviation Menu
+//-----------------------------------------------
+
+main nav
+	background-color: rgba(0,0,0,.85)
+	position: fixed
+	width: 100%
+	top: 0
+	z-index: 10
+	padding: 10px 20px
+	transition: background-color 0.3s
+	-webkit-transition: background-color 0.3s
+
+	&.fade
+		background-color: transparent
+
+	.logo
+		figure
+			width: 40px
+			height: 40px
+			float: left
+			margin: 0 10px 0 0
+			text-indent: -9999px
+			display: inline-block
+			background: url('/img/logos/shaun-logo.svg') no-repeat
+			background-size: 40px 40px
+
+	.nav-links
+		display: block
+
+	.nav-toggle
+		position: relative
+		float: right
+		padding: 9px 10px
+		background-color: transparent
+		border: 1px solid transparent
+		display: none
+		
+	.nav-toggle:focus
+		outline: 0
+
+	.nav-toggle .icon-bar
+		display: block
+		width: 22px
+		height: 2px
+		background: white
+		margin-top: 4px
+	
+	ul.navigation
+		float: left
+		li
+			display: inline-block
+			a
+				text-decoration: none
+				display: inline-block
+				padding: 10px 20px
+				font-size: 16px
+				color: white
+				transition: color 0.3s
+				-webkit-transition: color 0.3s
+				&:hover
+					color: $secondary-text-color
+				&.current
+					color: $secondary-text-color
+
+	ul.social-icons
+		float: right
+		li
+			display: inline-block
+			margin-left: 10px
+			a
+				display: block
+				height: 100%
+			svg
+				margin: 10px
+				fill: white
+				transition: all 0.3s ease-in-out
+				&:hover
+					fill: $primary-background-color
+
+@media only screen and (max-width: 767px)
+	main nav
+		&.fade
+			background-color: rgba(0,0,0,.85)
+		.nav-toggle
+			display: block
+		.nav-links
+			clear: both
+			display: none
+		ul.navigation
+			float: none
+			text-align: center
+			padding-top: 20px
+			li
+				display: block
+				a
+					display: block
+		ul.social-icons
+			float: none
+			text-align: center
+			padding: 20px 0
+			li
+				margin: 0 20px

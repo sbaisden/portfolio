@@ -1,0 +1,127 @@
+//-----------------------------------------------
+// Home Styles
+//-----------------------------------------------
+
+#home
+	header
+		background: black url('/img/home/background.jpg') center center no-repeat
+		background-size: cover
+		background-attachment: fixed
+		height: 100vh
+		min-height: 600px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		z-index: 1
+		.title-block
+			text-align: center
+			h1
+				color: $secondary-text-color
+			h3
+				color: $light-text-color
+		.scroller
+			border: 1px solid white
+			border-radius: 10px
+			width: 20px
+			height: 40px
+			position: relative
+			margin: 0 auto
+			span
+				height: 10px
+				width: 1px
+				position: absolute
+				background-color: white
+				left: 50%
+				top: 5px
+				-webkit-animation-name: scrolling
+				-webkit-animation-duration: 0.5s
+				-webkit-animation-timing-function: linear
+				-webkit-animation-iteration-count: infinite
+				-webkit-animation-direction: reverse		    
+				animation-name: scrolling
+				animation-duration: 0.5s
+				animation-timing-function: linear
+				animation-iteration-count: infinite
+				animation-direction: alternate
+				@-webkit-keyframes scrolling 
+					0%
+						top: 5px
+					100%
+						top: 10px
+				@keyframes scrolling
+					0%
+						top: 5px
+					100%
+						top: 10px
+
+	.summary
+		background-color: $primary-background-color
+		color: $light-text-color
+		text-align: center
+		padding: 50px 0
+		position: relative
+		z-index: 2
+		p
+			margin-top: 0
+
+	.project-highlights
+		text-align: center
+		padding: 0 0 40px 0
+		.portfolio
+			background: lightgrey
+			overflow: hidden
+			a
+				height: 100%
+				display: block
+				color: white
+				text-decoration: none
+				position: relative
+				.item-one,.item-two,.item-three
+					height: 300px
+					width: 100%
+					border: 1px solid white
+					margin: 0
+					transition: transform 0.3s
+				&:hover > .portfolio-items
+					transform: scale(1.5)
+				.item-one
+					background: url('/img/home/portfolio-1.jpg') center center no-repeat
+					background-size: cover
+				.item-two
+					background: url('/img/home/portfolio-2.jpg') center center no-repeat
+					background-size: cover
+				.item-three
+					background: url('/img/home/portfolio-3.jpg') center center no-repeat
+					background-size: cover
+				span
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					position: absolute
+					width: 100%
+					height: 100%
+					background-color: black
+					opacity: 0
+					top: 0
+					left: 0
+					transition: opacity 0.3s
+					p
+						padding: 10px 20px
+						display: inline-block
+						margin: 0
+						border: 1px solid white
+				&:hover > span
+					opacity: 0.8
+						
+		.more-block
+			margin: 30px 0 0
+
+@media only screen and (max-width: 767px)
+	#home
+		.project-highlights
+			.item-one,.item-two
+				border-right: none
+				border-bottom: 1px solid white
