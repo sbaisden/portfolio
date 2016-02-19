@@ -909,6 +909,7 @@ a.more-block, a.hover-white, a.hover-gold {
   text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
+  margin: 0;
   transition: all 0.3s;
   -webkit-transition: all 0.3s; }
   a.more-block.extend-button, a.extend-button.hover-white, a.extend-button.hover-gold {
@@ -1254,88 +1255,50 @@ main nav {
   #projects .projects-grid h3 {
     margin-bottom: 10px; }
   #projects .projects-grid .portfolio {
-    margin: 0 auto; }
-    #projects .projects-grid .portfolio.portfolio-1 {
-      background: url("/img/portfolio/baisden-portfolio.jpg") 0 0 no-repeat;
-      background-size: 800px 471px;
-      width: 800px;
-      height: 471px;
-      float: right; }
-    #projects .projects-grid .portfolio.portfolio-2 {
-      background: url("/img/portfolio/baisden-property.jpg") 0 0 no-repeat;
-      background-size: 800px 471px;
-      width: 800px;
-      height: 471px; }
-    #projects .projects-grid .portfolio.portfolio-3 {
-      background: url("/img/portfolio/dlg-portal.jpg") 0 0 no-repeat;
-      background-size: 800px 471px;
-      width: 800px;
-      height: 471px;
-      float: right; }
-    #projects .projects-grid .portfolio.portfolio-4 {
-      background: url("/img/portfolio/manchester-uni-opportunities.jpg") 0 0 no-repeat;
-      background-size: 800px 471px;
-      width: 800px;
-      height: 471px; }
-  #projects .projects-grid .descriptions {
-    padding: 20px; }
+    height: 400px;
+    overflow: hidden; }
+    #projects .projects-grid .portfolio figure {
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      margin: 0; }
+    #projects .projects-grid .portfolio .portfolio-1 {
+      background: url("/img/portfolio/baisden-portfolio.jpg") center center no-repeat; }
+    #projects .projects-grid .portfolio .portfolio-2 {
+      background: url("/img/portfolio/baisden-property.jpg") center center no-repeat; }
+    #projects .projects-grid .portfolio .portfolio-3 {
+      background: url("/img/portfolio/dlg-portal.jpg") center center no-repeat; }
+    #projects .projects-grid .portfolio .portfolio-4 {
+      background: url("/img/portfolio/manchester-uni-opportunities.jpg") center center no-repeat; }
+    #projects .projects-grid .portfolio .descriptions {
+      padding: 20px 100px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.5s; }
+      #projects .projects-grid .portfolio .descriptions h3 {
+        color: #fff;
+        padding-top: 100px;
+        transition: all 0.5s; }
+      #projects .projects-grid .portfolio .descriptions:hover {
+        opacity: 1; }
+        #projects .projects-grid .portfolio .descriptions:hover h3 {
+          padding-top: 0px; }
 
 @media only screen and (max-width: 1068px) {
-  #projects .projects-grid .portfolio {
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto; }
-    #projects .projects-grid .portfolio.portfolio-1 {
-      background: url("/img/portfolio/baisden-portfolio.jpg") 0 0 no-repeat;
-      background-size: 600px 353px;
-      width: 600px;
-      height: 353px;
-      margin-left: auto;
-      float: none; }
-    #projects .projects-grid .portfolio.portfolio-2 {
-      background: url("/img/portfolio/baisden-property.jpg") 0 0 no-repeat;
-      background-size: 600px 353px;
-      width: 600px;
-      height: 353px;
-      margin-left: auto; }
-    #projects .projects-grid .portfolio.portfolio-3 {
-      background: url("/img/portfolio/dlg-portal.jpg") 0 0 no-repeat;
-      background-size: 600px 353px;
-      width: 600px;
-      height: 353px;
-      margin-left: auto;
-      float: none; }
-    #projects .projects-grid .portfolio.portfolio-4 {
-      background: url("/img/portfolio/manchester-uni-opportunities.jpg") 0 0 no-repeat;
-      background-size: 600px 353px;
-      width: 600px;
-      height: 353px;
-      margin-left: auto; } }
-@media only screen and (max-width: 767px) {
-  #projects .projects-grid .portfolio.portfolio-1 {
-    background: url("/img/portfolio/baisden-portfolio.jpg") 0 0 no-repeat;
-    background-size: 400px 236px;
-    width: 400px;
-    height: 236px;
-    margin-left: auto; }
-  #projects .projects-grid .portfolio.portfolio-2 {
-    background: url("/img/portfolio/baisden-property.jpg") 0 0 no-repeat;
-    background-size: 400px 236px;
-    width: 400px;
-    height: 236px;
-    margin-left: auto; }
-  #projects .projects-grid .portfolio.portfolio-3 {
-    background: url("/img/portfolio/dlg-portal.jpg") 0 0 no-repeat;
-    background-size: 400px 236px;
-    width: 400px;
-    height: 236px;
-    margin-left: auto; }
-  #projects .projects-grid .portfolio.portfolio-4 {
-    background: url("/img/portfolio/manchester-uni-opportunities.jpg") 0 0 no-repeat;
-    background-size: 400px 236px;
-    width: 400px;
-    height: 236px;
-    margin-left: auto; } }
+  #projects .projects-grid .descriptions {
+    padding: 20px; } }
 #contact {
   background-color: #ae9a7d;
   color: white;
