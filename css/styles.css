@@ -1263,13 +1263,13 @@ main nav {
       height: 100%;
       margin: 0; }
     #projects .projects-grid .portfolio .portfolio-1 {
-      background: url("/img/portfolio/baisden-portfolio.jpg") center center no-repeat; }
+      background: url("/img/portfolio/baisden-portfolio.jpg") top center no-repeat; }
     #projects .projects-grid .portfolio .portfolio-2 {
-      background: url("/img/portfolio/baisden-property.jpg") center center no-repeat; }
+      background: url("/img/portfolio/baisden-property.jpg") top center no-repeat; }
     #projects .projects-grid .portfolio .portfolio-3 {
-      background: url("/img/portfolio/dlg-portal.jpg") center center no-repeat; }
+      background: url("/img/portfolio/dlg-portal.jpg") top center no-repeat; }
     #projects .projects-grid .portfolio .portfolio-4 {
-      background: url("/img/portfolio/manchester-uni-opportunities.jpg") center center no-repeat; }
+      background: url("/img/portfolio/manchester-uni-opportunities.jpg") top center no-repeat; }
     #projects .projects-grid .portfolio .descriptions {
       padding: 20px 100px;
       text-align: center;
