@@ -1108,7 +1108,7 @@ main nav {
       #home .project-highlights .portfolio a .item-three {
         background: url("/img/home/portfolio-3.jpg") center center no-repeat;
         background-size: cover; }
-      #home .project-highlights .portfolio a span {
+      #home .project-highlights .portfolio a div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1121,12 +1121,12 @@ main nav {
         top: 0;
         left: 0;
         transition: opacity 0.3s; }
-        #home .project-highlights .portfolio a span p {
+        #home .project-highlights .portfolio a div p {
           padding: 10px 20px;
           display: inline-block;
           margin: 0;
           border: 1px solid white; }
-      #home .project-highlights .portfolio a:hover > span {
+      #home .project-highlights .portfolio a:hover > div {
         opacity: 0.8; }
   #home .project-highlights .more-block, #home .project-highlights .hover-white, #home .project-highlights .hover-gold {
     margin: 30px 0 0; }
